@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import lookup
-import help
 
 """ Reverse-DNS lookup tool for all North Korean IP addresses.
 North Korean IP ranges are 175.25.176.0 - 175.45.179.255 and 
@@ -18,5 +17,5 @@ elif commandInput == "urllookup":
 	elif lookup.lookup(url) is None:
 		pass
 	else:
-		print(url + " is not hosted in North Korea.")
+		print("\033[1;42m" + url + " is not hosted in North Korea.\033[1;m")
 	
